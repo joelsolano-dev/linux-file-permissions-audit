@@ -16,3 +16,7 @@ mkdir -p /tmp/web_project/uploads
 touch /tmp/web_project/config.php
 chmod 777 /tmp/web_project/config.php
 chmod 777 /tmp/web_project/uploads
+find /tmp/web_project -type f -perm -o+w
+chmod 755 /tmp/web_project/uploads
+chmod 644 /tmp/web_project/config.php
+ls -la /tmp/web_project
